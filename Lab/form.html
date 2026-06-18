@@ -11,9 +11,9 @@
  
   <!-- ===== Navigation Bar ===== -->
   <nav>
-    <a href="Donation.html"> >1 Donation</a> |
-    <a href="conformation.html"> >2 conformation</a> |
-    <a href="Thank you.html"> >Thank you</a> |
+    <a href="Donation.html"> >1 Donation</a> 
+    <a href="conformation.html"> >2 conformation</a> 
+    <a href="Thank you.html"> >Thank you</a> 
   </nav>
  
   <hr>
@@ -22,11 +22,9 @@
 
   <form action="#" method="post">
  
-    <fieldset>
-     
       <table>
         <tr>
-          <td><label for="firstName">First Name*:</label></td>
+          <td><label for="firstName">First Name*:</label></tr>
           <td><input type="text" id="firstName" name="firstName" required></td>
         </tr>
 
@@ -126,8 +124,118 @@
         </tr>
 
       </table>
-    </fieldset>
+
+    <h1>Honorarium and Memorial Donation Information</h1>
+
+      <table>
+        <tr>
+          <td><label>I would like to make this donation:</label></td>
+          <td>
+            <input type="radio" name="honor_type" value="Honor"> To Honor
+            <input type="radio" name="honor_type" value="Memory"> In Memory of
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="honorName">Name:</label></td>
+          <td><input type="text" id="honorName" name="honorName"></td>
+        </tr>
+
+        <tr>
+          <td><label for="acknowledgeTo">Acknowledge Donation to:</label></td>
+          <td><input type="text" id="acknowledgeTo" name="acknowledgeTo"></td>
+        </tr>
+
+        <tr>
+          <td><label for="honorAddress">Address:</label></td>
+          <td><input type="text" id="honorAddress" name="honorAddress"></td>
+        </tr>
+
+        <tr>
+          <td><label for="honorCity">City:</label></td>
+          <td><input type="text" id="honorCity" name="honorCity"></td>
+        </tr>
+
+        <tr>
+          <td><label for="honorState">State:</label></td>
+          <td>
+            <select id="honorState" name="honorState">
+              <option value="">Select a state</option>
+              <option value="Cumilla">Cumilla</option>
+              <option value="London">London</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="honorZip">Zip:</label></td>
+          <td><input type="text" id="honorZip" name="honorZip" pattern="[0-9]{5}"></td>
+        </tr>
+
+      </table>
+
+    <h1>Additional Information</h1>
+
+      <p>Please enter your name, company or organization as you would like it to appear in our publications:</p>
+
+      <table>
+        <tr>
+          <td><label for="publicName">Name:</label></td>
+          <td><input type="text" id="publicName" name="publicName"></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" name="anonymous"> I would like my gift to remain anonymous.<br>
+            <input type="checkbox" name="matchingGift"> My employer offers a matching gift program. I will mail the matching gift form.<br>
+            <input type="checkbox" name="noThankYou"> Please save the cost of acknowledging this gift by not mailing a thank you letter.
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="comments">Comments:<br>(Please type any questions or feedback here)</label></td>
+          <td><textarea id="comments" name="comments" rows="5" cols="30"></textarea></td>
+        </tr>
+
+        <tr>
+          <td><label>How may we contact you?</label></td>
+          <td>
+            <input type="checkbox" name="contact" value="email"> E-mail<br>
+            <input type="checkbox" name="contact" value="mail"> Postal Mail<br>
+            <input type="checkbox" name="contact" value="phone"> Telephone<br>
+            <input type="checkbox" name="contact" value="fax"> Fax
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>I would like to receive newsletters and information about special events by:</label></td>
+          <td>
+            <input type="checkbox" name="newsletter" value="email"> E-mail<br>
+            <input type="checkbox" name="newsletter" value="mail"> Postal Mail
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" name="volunteer"> I would like information about volunteering with the organization.
+          </td>
+        </tr>
+
+      </table>
+
+    <p>
+      <button type="reset">Reset</button>
+      <button type="submit">Continue</button>
+    </p>
+
   </form>
+
+  <hr>
+
+  <footer>
+    <p>Donate online with confidence. You are on a secure server.</p>
+    <p>If you have any problems or questions, please contact support.</p>
+  </footer>
 
 </body>
 </html>
