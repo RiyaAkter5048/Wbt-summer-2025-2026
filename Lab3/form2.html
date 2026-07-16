@@ -1,50 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
 </head>
 <body>
- 
+ <h1>Registration</h1>
+    <p>Please compleate all field below</p><hr>
 <div class="container">
  
-    <div class="header">
-        <div class="title">Registration</div>
+    <div class="content">
+        <label>Full name :</label>
+        <input type="text" placeholder="Jane doe" >
+    </div>
+
+    <div class="content">
+        <label>Postal code:</label>
+        <input type="number"Placeholder="10001">
     </div>
  
     <div class="content">
-        <label>Full name</label>
-        <input type="text" >
+        <label>Date of birth:</label>
+        <input type="number" placeholder="25-06-26">
     </div>
  
     <div class="content">
-        <label>Postal code</label>
-        <input type="number">
+        <label>Work email:</label>
+        <input type="email"placeholder="jane@example.com">
     </div>
  
     <div class="content">
-        <label>Date of birth</label>
-        <input type="date">
+        <label>Password:</label>
+        <input type="password" placeholder="******">
     </div>
- 
-    <div class="content">
-        <label>Work email</label>
-        <input type="email">
-    </div>
- 
-    <div class="content">
-        <label>Password</label>
-        <input type="password">
-    </div>
- 
- 
-        <div class="check">
-            <input type="checkbox" checked>
-            Email me product updates and tips
-        </div>
- 
-        <div class="check">
-            <input type="checkbox">
-            I agree to the Terms & Privacy Policy
+
+         <div class="content">
+            <label>Country: </label>
+            <input type="country" Placeholder="Bangladesh">
+            <select id="country" name="country">
+              <option value="">Select a country</option>
+              <option value="UK">Uk</option>
+              <option value="BAngladesh">Bangladesh</option>
+            </select>
+    
         </div>
  
         <input class="create" type="submit" value="Create workspace">

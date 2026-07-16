@@ -7,6 +7,26 @@ p{
 } 
 
 
-#div1{
+#div1 p{
+    color: black;
+} 
+
+#div2 p{
+    color:red;
+} 
+#div1 p{
+    border: 1px solid blue;
+    padding: 3px;
+}
+#div1 p{
+    border: 2px dotted red;
+    padding: 3px;
+} 
+
+.webtext{
     color: blue;
+}
+
+.webtext.active{
+    color: black;
 }
